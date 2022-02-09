@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        #header{
+          
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          
+      }
+     
+      #firstPart{
+          display: flex;
+          flex-direction: row;
+
+      }
+
+      #sideBar{
+          display: flex;
+          flex-direction: row;
+
+      }
+      
+      #phone{
+          display: flex;
+          flex-direction: row;
+      }
+      .firstTable, .thFirst, .tdFirst{
+          border: 1px solid grey;
+          border-collapse: collapse;
+          padding: 5px;
+
+      }
+      
+      #lastTable,.thLast,.tdLast {
+          border: 1px solid grey;
+          border-collapse: collapse;
+          padding: 5px;
+
+      }
+      .leftSide{
+          color: darkblue;
+          text-transform:uppercase;
+      }
+
+      .oneTd{
+          background-color: grey;
+      }
+
+      #main-content{
+          display: flex;
+          flex-direction: row;
+         
+      }
+      #second{
+          width: fit-content;
+          height: fit-content;
+      }
+      table.rows.leftSide{
+          width:fit-content;
+          
+           
+      }
+      .SpanData{
+          color: rgb(83, 182, 212);
+          font-weight: bold;
+      }
+      hr{
+          color: rgb(16, 52, 143) solid 5px;
+      }
+      .links:hover{
+          font-size: 20px;
+          text-decoration: none;
+        
+          
+      }
+      #menue{
+        width: 90%;
+        height: fit-content;
+       background-color: rgb(83, 182, 212);
+       position: relative;
+       left: 49px;
+      }
+      #menue ul li {
+          margin-left: 50px;
+
+      }
+      #menue ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      a{
+          target:_blanck;
+      }
+
+      @media only screen and (maxwidth: 600px) {
+         #menue ul {
+         list-style-type: none;
+             margin: 0;
+              padding: 0;
+            width: 200px;
+                background-color: #f1f1f1;
+                display: inline;
+             }      
+              #menue ul li a {
+                display: block;
+                color: #000;
+               padding: 8px 16px;
+              text-decoration: none;
+              display: inline;
+              }
+                   
+     } 
+
+    </style>
+    
+</head>
+<body>
+    
+    <!-- this div for header -->
+    <div id="header">
+        <div class="box"> <img src="images/WhatsApp Image 2022-01-27 at 9.29.55 AM.jpeg" class="headerImg"> </div>
+        <div class="box"> Curriculum Vitae</div>
+        <div class="box"> Omar Alsafadi </div>
+
+     </div>
+
+               <!-- this div for menue -->
+     <div id="menue" style="padding: 15px; margin-top: 60px; ">
+        <ul style=" width:100% ; text-align: center;">
+           
+            <li style="display: inline-block;" ><a class="links" href="#education">Education traning</a></li>
+            <li style="display: inline-block;"><a class="links" href="#com">Communication skills</a></li>
+            <li style="display: inline-block;"><a class="links" href="#workshops">workshops</a></li>
+            <li style="display: inline-block;"><a class="links" href="#job"> job applied</a></li>
+            <li style="display: inline-block;"></li>
+            <li style="display: inline-block;"></li>
+            <li style="display: inline-block;"></li>
+            <li style="display: inline-block;"></li>
+            <li style="display: inline-block;"></li>
+            <li style="display: inline-block;"></li>
+        </ul>
+
+
+     </div>
+      
+     <!-- this div is a container that includes almost all the things after the menue to control the movemonts for all elements if needed  -->
+     <div id="Fcontainer" style="margin: 50px;">
+         <pre><span  style="color: blue;">PERSONAL INFORMATION</span>      Omar Alsafadi</pre>
+       
+         <!-- I made this div so that I be able to move all the next elements to the right of the pre -->
+         <div id="FnestedCon" >
+            
+                    <!-- this part all include my personal pecture and the icons -->
+                  <div id="firstPart" style="position: relative; left: 50px;"><img id="myPersonalImg" src="/images/personal.jpeg" alt="" style="width: 120px;">
+                
+                    <!-- this div for the icons that are in different lines -->
+                    <div id="icons" style="position: relative; left: 25px;">
+                        <p><img src="/images/WhatsApp Unknown 2022-01-27 at 1.55.04 PM/location.jpeg" alt=""> Riyadh 12838</p>
+                         <!-- this div is a flex div which enabled me to put two icons on the same line -->
+                        <div id="phone">
+                            <span><img src="/images/WhatsApp Unknown 2022-01-27 at 1.55.04 PM/phone.jpeg" alt=""></span>
+                            <span style="position: relative; left: 100px;"><img src="/images/WhatsApp Unknown 2022-01-27 at 1.55.04 PM/mobile.jpeg" alt="">0552554654</span>
+
+                        </div>
+                        <p><img src="/images/WhatsApp Unknown 2022-01-27 at 1.55.04 PM/email.jpeg" alt=""><a class="links" href="mailto:mailto:219210974@psu.edu.sa"> 219210974@psu.edu.sa</a></p>
+                        <p><img src="/images/WhatsApp Unknown 2022-01-27 at 1.55.04 PM/personalWebsite.jpeg" alt="">   <a class="links" href="https://www.linkedin.com/in/omar-alsafadi-967ab4210/">linked in</a></p>
+                        <p><img src="/images/WhatsApp Unknown 2022-01-27 at 1.55.04 PM/message.jpeg" alt=""></p>
+                    </div>    
+                        
+                    
+                </div>  
+                <!-- this div include sex, date of birth and nationlity I put in seprate div so that I can move to the right -->
+                <div class="SecondPart" style="margin-left: 14% ;">
+                    <span class="SpanData">Sex</span> male <span class="SpanData"> | Date of birth </span> 2002/1/17 <span class="SpanData"> | Nationality </span> Palstaine
+                            
+                </div> <br><br><br> 
+
+                
+                        
+                       <!-- this div is the larges one and it includes almost all the other information -->
+                   <div class="thirdPart " style="position: relative; bottom: 96px;">
+                    
+                     <!-- I to right left and right information  -->
+                       <table class="mainTable">
+                           <tbody>
+       
+                                  <tr class="rows">
+                                      <td class="leftSide" style="width:20% ;"> <span id="job">JOB APPLIED </span> 
+                                        </td>
+                                      <td class="rightSide" style="text-align: center; font-size: 20px;">
+                                          Cybersecurity intern
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">
+                                          
+                                      </td>
+                                      <td class="rightSide">
+                                          <div style="border-top: rgb(114, 218, 250) solid 2px;"></div>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">
+                                          <p id="projects">
+                                            projects/experice
+                                          </p>
+                                      </td>
+                                      <td>
+                                          <p>
+                                            <ul style="list-style: none;">
+                                                <li style="color:rgb(0, 110, 255);"> </li><br>
+                                                <li><a class="links" target="_blanck" style="text-decoration: none;" href="https://github.com/omar6533/Phase2_project_FlyAway"> Developing the backend part of a projct named  flyaway using java as a programing language </a></li><br> <a target="_blank" class="links" style="text-decoration: none;" href="https://ibb.co/7vHWNYs">certificate </a> 
+                                                <li>front end using html my first project is this CV</li><br>
+                                                <li></li><br>
+                                            </ul>
+                                            
+                                          </p>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">
+                                          <span id="education">EDUCATION AND TRAINING</span>
+                                          <br><br><br>
+
+                                      </td>
+                                      
+                                      <td>
+                                          <div style="border-top: rgb(114, 218, 250) solid 2px;"></div>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide"> (2019 - 2024)</td>
+                                      <td>
+                                          
+                                          <ul style="list-style: none;">
+                                            
+                                              <li style="font-size: 19px;">Bachelor in Software engineering-cybersecurity track</li><br>
+                                              <li> currnet GPA: 3.24 </li><br>
+                                              <li> <a class="links" target="_blanck" href="https://ibb.co/kS7WPJB"> finished courses so far</a> </li><br>
+                                              <li> I'm involoved in a long term BootCamp called full stack java developer  </li>
+                                                  
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">PERSONAL SKILLS</td>
+                                      <td><div style="border-top: rgb(114, 218, 250) solid 2px;"></div></td><br><br>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">Mother tongue(s)</td>
+                                      <td>Arabic</td><br><br>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">
+                                          <p>
+
+                                          </p>
+                                          <p>
+                                          </p>
+                                          <p>
+                                          </p>
+                                        </td>
+                                      <td>
+                                        <table id="firstTable">
+                                            <thead>
+                                                <tr>
+                     
+                                                    <th class="thFirst" style="color: darkblue; padding: 10px;" >UNDERSTANDING</th>
+                                                    <th class="thFirst" style="color: darkblue; padding: 10px;"  >SPEAKING</th>
+                                                    <th class="thFirst" colspan="4" style="color: darkblue; padding: 10px;">WRITING</th>
+                     
+                                                </tr>
+                                            </thead>
+                                             <tbody>
+                                                     <td class="tdFirst">Reading </td>
+                                                     <td class="tdFirst">Spoken interaction </td>
+                                                     <td class="tdFirst">Spoken production </td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>Advanced</td>
+                                                     <td>Advanced</td>
+                                                     <td>Advanced</td>
+                                                     <td>Advanced</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td colspan="5" class="oneTd">f</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td>Advanced</td>
+                                                     <td>Advanced</td>
+                                                     <td>Advanced</td>
+                                                     <td>Advanced</td>
+                                                 </tr>
+                                                 <tr>
+                                                     <td colspan="5" class="oneTd">f</td>
+                                                 </tr>
+                                             </tbody>
+                     
+                                         </table>
+                                         
+
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide"><span id="com">Communication skills</span> </td>
+                                      <td>
+                                          <ul style="list-style: none;">
+                                              <li> <a target="_blanck" style="text-decoration: none;" class="links" href="https://twitter.com/moe_ryh_21_0062/status/935783765166653440?s=21" > I represetned my High school in Communication skills based compition </a><br><br> 
+
+                                                </li>
+                                                <li> <a  target="_blanck" class="links" style="text-decoration: none;" href="https://ibb.co/ys4Ww9C">I was the delegate of China in PSUMUN</a> </li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide"></td>
+                                      <td>
+                                          <ul style="list-style: none;">
+                                              <li> </li>
+                                              <li></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">
+                                          
+                                      </td>
+                                      <td>
+                                          <ul style="list-style: none;">
+                                              <li> </li>
+                                              <li></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide"></td>
+                                      <td>
+                                          <table id="lastTable">
+                                              <tr>
+                                                  <th class="thLast" colspan="5" style="text-align: center; border: none; color: darkblue;">SELF-ASSESSMENT</th>
+                                              </tr>
+                                             
+                                              <tr>
+                                                  <td class="tdLast" style="color: darkblue;">Information processing</td>
+                                                  <td class="tdLast" style="color: darkblue;">Communication</td>
+                                                  <td class="tdLast" style="color: darkblue;">Conttent <br>
+                                                    creation
+                                                </td>
+                                                  <td class="tdLast" style="color: darkblue;">Safty</td>
+                                                  <td class="tdLast" style="color: darkblue;">Problem solving</td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="tdLast">Advanced</td>
+                                                  <td class="tdLast">professional</td>
+                                                  <td class="tdLast">beginner</td>
+                                                  <td class="tdLast">beginner</td>
+                                                  <td class="tdLast">professional</td>
+                                              </tr>
+                                              <tr>
+                                                  <td style="text-align: center;" colspan="5" class="tdLast"> <a  target="_blanck" class="links" style="text-decoration: none ;" href="https://ibb.co/Fm3LjfV"> IETLS 6.5 </a>
+                                                </td>
+
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="5" style="text-align: center;" class="tdLast"></td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide"></td>
+                                      <td>
+                                          <ul style="list-style: none ;">
+                                              <li>
+                                                </li>
+                                              <li></li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">ADDITIONAL INFORMATION</td>
+                                      <td><div style="border-top: rgb(114, 218, 250) solid 2px;"></div></td><br><br></td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide">
+                                        <ul style="list-style: none;">
+                                            <li>clubs and associations</li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                      </td>
+                                      <td>
+                                          <p>
+                                            <h3>club member: </h3>
+                                            <ul>
+                                                <li>Caybersecrity club</li>
+                                                <li>industry 4.0 club</li>
+                                            </ul>
+                                            
+                                          </p>
+
+                                        
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide"> <span id="workshops">workshops and hobies</span> </td>
+                                      <td>
+                                        <div style="border-top: rgb(114, 218, 250) solid 2px;"></div><br><br>
+
+                                      </td>
+                                  </tr>
+                                  <tr class="rows">
+                                      <td class="leftSide"></td>
+                                      <td>
+                                         <p>
+                                             Please see my profile on <a class="links" target="_blank" style="text-decoration: none;" href="https://profile.satr.codes/user/omar6533"> CoderHub</a> where I spend 
+                                             some of my free time in programing. Not to mention to see my<a class="links" target="_blank" style="text-decoration: none;" href="https://github.com/omar6533?tab=repositories"> GitHub</a> account. 
+                                         </p>
+                                        <ul style="list-style: none;">
+                                            some workshops: <br><br>
+                                            <li> <a class="links" style="text-decoration: none; " target="_blank" href="https://ibb.co/FHNy0MD">introduction to blockchain technolgy</a> </li>
+                                            <li><a class="links" style="text-decoration: none; " target="_blank" href="https://ibb.co/ncLnXvb"> Artificail intelgince BootCamp</a></li>
+                                            <li><a class="links" style="text-decoration: none; " target="_blank" href="https://ibb.co/D90RJDg">attending HCI show case</a></li>
+                                        </ul>
+                                      </td>
+                                  </tr>
+       
+                           </tbody>
+                       </table>
+
+
+                   </div>
+                     
+                   
+                    
+                
+                
+        
+         </div>
+        
+     </div>
+
+
+     <!-- this div is simply footre -->
+     <div class="footer" style="text-align: center;">
+         &copy; European Union, 2002-2018 | europass.cedefop.europa.eu <br>
+         Page 2 / 2 
+     </div>
+
+    
+    
+</body>
+</html>
